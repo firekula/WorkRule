@@ -44,7 +44,7 @@
 * 代码同步若遇到冲突，需双方讨论代码取舍，若场景冲突，则舍弃修改少的一方，同步后再修改
 
 ## Github配置
-* [Git 下载地址](./exe/Git-2.29.2.3-64-bit.exe) 右键另存为
+* [Git 下载地址]([./exe/Git-2.29.2.3-64-bit.exe](https://git-scm.com/downloads))
 * 使用 `Github` 上的ssh链接来配置远程链接
 * `ssh-keygen -t rsa -C "example@mail.com"` 来配置本地ssh密钥
 * `cd ~/.ssh` + `cat id_rsa.pub` 来获取公钥  

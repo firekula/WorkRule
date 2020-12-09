@@ -44,6 +44,22 @@
 * 代码同步若遇到冲突，需双方讨论代码取舍，若场景冲突，则舍弃修改少的一方，同步后再修改
 
 ## Github配置
+* [Git 下载地址](./exe/Git-2.29.2.3-64-bit.exe) 右键另存为
+* 使用 `Github` 上的ssh链接来配置远程链接
+* `ssh-keygen -t rsa -C "example@mail.com"` 来配置本地ssh密钥
+* `cd ~/.ssh` + `cat id_rsa.pub` 来获取公钥  
+  ![](./image/github1.png)
+* 在 `Github` 上点击设置  
+  ![](./image/github2.png)
+* 选择左侧 `SSH and GPG keys`  
+  ![](./image/github3.png)
+* 点击 `New SSH key` 将密钥拷贝进去之后点击 `Add SSH key` 即可  
+  ![](./image/github4.png)
+* 新建空文件夹，右键打开 `Git bash`  
+  ![](./image/git1.png)
+* 输入 `git clone 存储库ssh地址` 克隆项目到本地  
+  ![](./image/git2.png)
+* 之后将克隆下来的文件夹里的 `.git` 文件夹拷贝到项目中，即可在 VSCode 中提交
 * `git config --global user.name` 可以设置全局 `git` 用户名，该信息会在提交时附带  
 * `git config --global user.email` 可以设置全局 `git` 邮箱，该信息会在提交时附带  
 * 可以通过先在 `Github` web修改一些东西提交，本地查看提交记录来得到 `Github` 上配置的用户名和邮箱，来防止网页提交和本地提交变为两个用户  

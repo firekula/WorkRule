@@ -1,0 +1,10 @@
+{
+    "title": "工作注意事项",
+    "language": "zh-hans",
+    "plugins": [
+        "-sharing",
+        "-lunr",
+        "back-to-top-button",
+        "hide-published-with"
+    ]
+}

@@ -18,7 +18,7 @@
 * 类名及枚举命名遵循大驼峰式命名法
     ```typescript
     class User{}
-    enum UsetState{}
+    enum UserState{}
     ```
 * 类名、变量名和方法名等，尽量使用英文单词
 * 使用 `Typescript` 时，变量及方法声明，需要把类型也写好

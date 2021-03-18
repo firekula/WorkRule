@@ -56,7 +56,7 @@
 * 发包时压缩包的名字命名规则为 `游戏名_平台名(构建默认名称)_日期(0318)第几个包(01)` 例: `游戏名_web-mobile_031801.zip`
 
 # Github配置
-* [Git 下载地址]([./exe/Git-2.29.2.3-64-bit.exe](https://git-scm.com/downloads))
+* [Git 下载地址](https://git-scm.com/downloads)
 * 使用 `Github` 上的ssh链接来配置远程链接
 * `ssh-keygen -t rsa -C "example@mail.com"` 来配置本地ssh密钥
 * `cd ~/.ssh` + `cat id_rsa.pub` 来获取公钥  

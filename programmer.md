@@ -52,6 +52,10 @@
     ```
 * 对于声明后不会修改其值的变量，需要使用 `const` 进行声明，除此之外使用 `let`，没有特别需求不可使用 `var` 进行局部变量的声明  
 * 使用匿名函数的时候，不要使用 `function (){}` 的方式定义，使用 `()=>{}`
+# 项目资源管理
+* 项目的美术/配置表资源应分文件夹放好
+* 美术预览图或无用资源应避免提交到远程仓库
+* 美术资源尽量以界面或用途区分文件夹，且按照实际功能或用途命名
 # 代码提交
 * 提交消息使用 `git-commit-plugin` 插件模板进行书写  
 * 提交代码时需说明本次提交的修改  
@@ -64,7 +68,9 @@
 * 发包前自行测试需要将游戏内所有的功能点进行最少一次的测试，发现问题修复后重新测试，直到没有问题  
 # Github配置
 * [Git 下载地址](https://git-scm.com/downloads)
-* 使用 `Github` 上的ssh链接来配置远程链接
+
+## 使用 `Github` 上的ssh链接来配置远程链接
+### 配置公钥
 * `ssh-keygen -t rsa -C "example@mail.com"` 来配置本地ssh密钥
 * `cd ~/.ssh` + `cat id_rsa.pub` 来获取公钥  
   ![](./image/github1.png)
@@ -74,11 +80,13 @@
   ![](./image/github3.png)
 * 点击 `New SSH key` 将密钥拷贝进去之后点击 `Add SSH key` 即可  
   ![](./image/github4.png)
+### 克隆项目
 * 新建空文件夹，右键打开 `Git bash`  
   ![](./image/git1.png)
 * 输入 `git clone 存储库ssh地址` 克隆项目到本地  
   ![](./image/git2.png)
-* 之后将克隆下来的文件夹里的 `.git` 文件夹拷贝到项目中，即可在 VSCode 中提交
+* 之后将克隆下来的文件夹里的 `.git` 文件夹拷贝到项目中，即可在 VSCode 中提交  
+### 其他
 * `git config --global user.name` 可以设置全局 `git` 用户名，该信息会在提交时附带  
 * `git config --global user.email` 可以设置全局 `git` 邮箱，该信息会在提交时附带  
 * 可以通过先在 `Github` web修改一些东西提交，本地查看提交记录来得到 `Github` 上配置的用户名和邮箱，来防止网页提交和本地提交变为两个用户  

@@ -76,8 +76,41 @@
 * 项目创建后应立刻在**Github**上创建项目并首次提交
 * 项目每完成一个功能模块或制作完界面场景等之后，必须先提交一次再继续工作
 * 美术预览图或无用资源应避免提交到远程仓库
-* 美术资源尽量以界面或用途区分文件夹，且按照实际功能或用途命名
 
+
+# 游戏存档数据结构
+* 金币、体力、钻石、等级、签到、BGM音量、效果音量为基础数据类型，可直接在 `archiveManager` 中使用
+* 其他数据为游戏数据，请将其保存在 `archiveManager.gameDate` 中
+    * 用法：
+        ```ts
+        //初始化
+        archiveManager.gameData = {
+            level1: 1,
+            level2: 0,
+            level3: 0,
+            map: 0,
+            unlock: [1],
+            tipsCount: 1,
+            doubleCount: 1,
+        };
+        //也可分开在需要时初始化
+        if (archiveManager.gameData.level1 == null) {
+			archiveManager.gameData.level1 = 1;
+		}
+
+        //保存数据
+        archiveManager.saveData();
+        
+        //更新某一数据
+        archiveManager.gameDate.level1 = 2;
+        archiveManager.saveData();
+
+        //使用某一数据
+        let level1 = archiveManager.gameDate.level1;
+        ```
+# 节点命名
+* 与代码相同使用小驼峰命名，若有多个相同类型节点，则在前面添加类型并用下划线分开
+    * 例：`btn_Start`、`btn_Setting`、`btn_Close`、`btn_CloseSetting`、`btn_CloseRank`
 # 代码提交
 
 * 提交消息使用 `git-commit-plugin` 插件模板进行书写

@@ -108,16 +108,20 @@
         //使用某一数据
         let level1 = archiveManager.gameDate.level1;
         ```
+
+
 # 节点命名
 * 与代码相同使用小驼峰命名，若有多个相同类型节点，则在前面添加类型并用下划线分开
     * 例：`btn_Start`、`btn_Setting`、`btn_Close`、`btn_CloseSetting`、`btn_CloseRank`
-# 代码提交
 
+
+# 代码提交
 * 提交消息使用 `git-commit-plugin` 插件模板进行书写
 * 提交代码时需说明本次提交的修改
 * 同步若遇到冲突，需双方讨论取舍
 * 若不同渠道有不同的功能或需求，则为对应渠道添加新分支，之后若有所有渠道都要改的部分，则将对应提交同步到各个分支去
 * 代码仓库必须 **设置私有**，必须将 **Owner** 设置为 **mqgame2020**
+
 
 # 发包
 
